@@ -1,0 +1,359 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;/* the width & height properties min /max properties includes the content ,padding, border.*/
+
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+.shabar{
+	display: flex; /*allows items to fill available spaces*/
+	align-items: center;
+	padding: 20px;
+}
+
+nav{
+	flex: 1;
+	text-align: right;
+}
+
+nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+
+nav ul li{
+	display: inline-block;/* sets a width and height element*/
+	margin-right: 20px;
+}
+
+a{
+	text-decoration: none;
+	color: #555;
+}
+
+p{
+	color: #555;
+}
+
+.container{
+	max-width: 1300px;
+	margin:auto;/*to horizontally center the element*/
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.row{
+	display: flex;/*if theirs shrinking their will be no overflow*/
+	align-items: center;
+	flex-wrap: wrap;/*breaks it into multiple lines */
+	justify-content: space-around;
+}
+
+.col-6{
+	flex-basis: 50%;/**/
+	min-width: 300px;
+}
+
+.col-6 img{
+	max-width: 100%;
+	padding: 50px 0;
+}
+
+.col-6 h1{
+	font-size: 50px;
+	line-height: 60px;
+	margin: 25px 0 ;
+}
+
+.btn{
+	display: inline-block;
+	background: #ff523b;
+	color: #fff;
+	padding: 8px 30px;/* top & bottom   left&right*/
+	margin: 30px 0;
+	border-radius: 30px; 
+	transition: background 0.5s;/* allows a smooth transition over a period of time*/
+}
+
+.btn:hover{
+	background: #563434;
+}
+
+.header{
+	background: radial-gradient(#fff, #ffd6d6);/*sets the background image and it defines atleast two colors*/
+
+}
+
+.header .row{
+	margin-top: 70px;
+}
+
+/* upto here we are done with the header section.* /
+
+/* we start the featured categories.*/
+
+.categories{
+	margin: 70px 0;
+}
+
+.col-4{
+	flex-basis: 30%;
+	min-width: 350px;
+	margin-bottom: 30px;
+
+}
+.col-4 img{
+	width: 100%;
+}
+
+.small-container{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+/* featured products*/
+.col-3{
+	flex-basis: 25%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+
+}
+
+
+
+.title{
+	text-align: center;
+	margin: 0 auto 80px;
+	position: relative;
+	line-height: 60px;
+	color: #555;
+}
+
+.title::after{
+	content: '';
+	background: #ff523b;
+	width: 80px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 45%;
+	
+}
+h4{
+	color: #555;
+	font-weight: normal;
+
+}
+
+.col-3 p{
+	 font-size: 14px;
+}
+
+.rating .fa{
+	color: #ff523b;
+
+}
+
+.col-3:hover{
+	transform: translateY(-5px);
+}
+
+/*latest products*/
+
+/*OFFER*/
+
+.offer{
+		background: radial-gradient(#fff, #ffd6d6);/* hii color imekataa kujaza webpage manze */
+		margin-top: 80px;
+		padding: 30px 0;
+
+
+		
+}
+
+.col-6 .offer-img{
+	padding: 50px;
+}
+
+small{
+	color: #555;
+}
+
+/*Testimonials*/
+.Testimonials{
+	padding-top: 100px;
+
+}
+
+.Testimonials  .col-4{
+	text-align: center;
+	padding: 40px 20px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);/*ataches more than 1 shadow to an element rgba is red green blue alpha*/
+	cursor: pointer;
+	transition: transform 0.5s;
+
+
+
+}
+
+.Testimonials  .col-4 img{
+	width: 50px;
+	margin-top: 20px;
+	border-radius: 50%;
+}
+
+.Testimonials  .col-4:hover{
+	transform: translateY(-10px);
+
+}
+
+
+i{
+	font-size: 34px;
+	color: #ff523b;
+}
+
+.col-4 p{
+	font-size: 12px;
+	margin: 12px 0;
+	 color: #777;
+}
+
+.Testimonials  .col-4 h3{
+	font-weight: 600;
+	color: #555;
+	font-size: 16px;
+
+
+}
+
+/*Brands*/
+
+.Brands{
+	margin: 100px auto;
+}
+
+.Brands-col-3{
+	width: 160px;
+
+}
+
+.Brands-col-3 img{
+	width: 100%;
+	cursor: pointer;
+	filter: grayscale(100%);/*change all images to black and white*/
+
+}
+
+.Brands-col-3 img:hover{
+	filter: grayscale(0);/* THIS RETURNS THE ORIGINAL COLOR*/
+
+}
+
+/*Footer*/
+/*.footer{
+	background: #000;
+	color: #8a8a8a;
+	font-size: 14px;
+	padding-top: 60px 0 20px;
+}
+
+.footer p{
+	color: #8a8a8a;
+}
+
+.footer h3{
+	color: #fff;
+	margin-bottom: 20px; 
+}
+
+.footer-col-3{
+	min-width: 250px;
+	margin-bottom: 20px;
+	flex-basis: 30%;
+	text-align: center;
+	
+}
+
+.footer-col-3 ul{
+	list-style-type: none;
+
+
+
+}*/
+
+.menu-icon{
+	width: 28px;
+	margin-left: 20px;
+	display: none;/*this will be hidden kwa the main website itaonekana ukisha minimize*/
+}
+
+
+
+/*Media query for menu*/
+
+@media  only screen and (max-width: 800px){
+
+	nav ul{
+		position: absolute;
+		top: 70px;
+		left: 0;
+		background: #333;
+		width: 100%;
+		overflow: hidden;
+		transition: max-height 0.5s;
+	}
+
+	nav ul li{
+		display: block;
+		margin-right: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+
+	}
+
+	nav ul li a{
+		color: #fff;
+	}
+
+	.menu-icon{
+		display: block;
+		cursor: pointer;
+
+
+	}
+}
+
+
+/*Media query for less than 600 screen size*/
+
+@media  only screen and (max-width: 600px){
+	.row{
+		text-align: center;
+
+	}
+
+	.col-6,.col-4,.col-3{
+		flex-basis: 100%;
+		
+
+
+	}
+
+}
+
+
+
+
+
+
+
